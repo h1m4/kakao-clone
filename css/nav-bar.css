@@ -1,0 +1,43 @@
+.nav {
+  position: fixed; /*width를 설정해 주어야 한다.*/
+  width: 100%;
+  padding: 20px 50px; /*위아래 양 옆;*/
+  left: 0px;
+  bottom: 0px; /*icon도 font-size로 조정함*/
+   background-color: #fcfcfc;
+   border-top: 1px solid #f7f7f7;
+   box-sizing: border-box; /*
+   content-box : 콘텐트 영역을 기준으로 크기를 정합니다.
+   border-box : 테두리를 기준으로 크기를 정합니다.
+   initial : 기본값으로 설정합니다.
+   inherit : 부모 요소의 속성값을 상속받습니다.
+   */
+}
+
+.nav i {
+  font-size: 20px;
+}
+.nav .nav__list{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.nav .nav__list-link {
+  position: relative;
+}
+
+.nav .nav__badge{
+  font-size: 10px;
+  position:absolute;
+  top:-10px;
+  right:-7px;
+  color:white;
+  background-color: #dc4d46;
+  width:18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}

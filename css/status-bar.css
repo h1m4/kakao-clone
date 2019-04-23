@@ -1,0 +1,12 @@
+.status-bar{
+  display : flex; /*안쪽의 div들 가로정렬 https://joshuajangblog.wordpress.com/2016/09/19/learn-css-flexbox-in-3mins/*/
+  justify-content: space-between; /*div 사이 공간만들기*/
+  margin-bottom: 30px;/*padding은 콘텐츠에 포함되는 부분, margin은 콘텐츠에 포함되지 않는 border의 바깥 */
+  opacity: 0.7;/*투명도 color 주는 효과*/
+}
+
+.status-bar i {
+  font-size:14px;
+}
+
+.status-bar .status-bar__battarty-level: 5px;

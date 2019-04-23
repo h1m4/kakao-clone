@@ -1,0 +1,131 @@
+.chat__write {
+    position: fixed;
+    bottom: 50px;
+    width : 80%;
+    display:flex;
+    justify-content: space-between;
+    background-color: #fcfcfc;
+    padding: 20px 20px;
+    margin: 0 auto;
+    left:0;
+    right:0; /*for center*/
+    border-radius: 40px;
+    align-items : center;
+    box-shadow : 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.chat__write i {
+    font-size: 22px;
+}
+
+.chat__write-column:nth-child(2){
+    width : 80%;
+}
+
+.chat__write-column input{
+    width: 100%;
+    padding: 20px 10px;
+    border:none;
+    font-size:14px;
+}
+
+.chat__write-column input:focus{
+    outline:none;
+}
+
+.chats-body{
+    padding:0;
+}
+
+.chats-body .header,
+.chats-body .status-bar{
+    padding: 0px 20px;
+}
+
+.chat-screen{
+    background-image: url("../images/regal.png");
+    min-height: 1000vh; /*view port height as percentage*/
+    
+}
+
+.chat-screen .chat__messages{
+    padding-top : 30px;
+    display:flex;
+    flex-direction: column;
+    padding:0px 20px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #f7f7f7;
+}
+
+.chat__messages .chat__timestamp{
+    background-color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow : 0px 8px 20px rgba(0, 0, 0, 0.2);
+    text-transform:uppercase;
+    font-weight: 700;
+}
+
+
+.message {
+    display:flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    
+}
+
+.message .message__content{
+    width: 850%
+}
+
+.incoming-message img{
+    width : 30px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+.incoming-message {
+    align-self : flex-start;
+    
+}
+
+.sent-message {
+    align-self:flex-end;
+    
+    
+}
+
+.message .message__bubble{
+    background-color: white;
+    display: block;
+    box-shadow : 0px 8px 20px rgba(0, 0, 0, 0.2);
+    padding : 10px 20px;
+    border-radius: 15px;
+}
+
+.incoming-message .message__author{
+    margin-top: 10px;
+    display:block;
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.incoming-message .message__bubble{
+    border-bottom-left-radius: 0px;
+    background-image: linear-gradient(to right,#acb6e5, #86fde8)
+   
+}
+
+.sent-message .message__bubble{
+    border-bottom-right-radius: 0px;
+    color : white;
+    background-image: linear-gradient(to left,#acb6e5, #86fde8)
+}
+
+/*span은 inline 요소이기 때문에 text처럼 공간을 차지한다.
+margin이 무시되는 건 이 때문에 일어날 수 있음. > display : block으로 해결*/

@@ -1,0 +1,30 @@
+@import "reset.css";
+@import "status-bar.css";
+@import "header.css";
+@import "nav-bar.css";
+@import "friend.css";
+@import "friends.css";
+@import "find.css";
+@import "more.css";
+@import "settings.css";
+@import "chat.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+* {
+   box-sizing: border-box;
+}/*tell all the elements*/
+body{
+  background-color: white;
+  padding : 10px 20px;
+  color:#020202;
+  font-family: "Open Sans"
+}
+
+a {
+  color:inherit; /*부모로부터 색을 받아오기 보라색 싫어요!*/
+  text-decoration: none;
+}
+
+/*div {} 태그명
+.something {} 클래스명
+#id {} id명*/
